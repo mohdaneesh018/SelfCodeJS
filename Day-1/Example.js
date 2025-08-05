@@ -37,3 +37,36 @@ if(score >= 90){
 } else {
     console.log("Fail");
 }
+
+
+
+
+
+// 4. Switch Statement
+
+// Qs.
+let player = "Dhoni";
+switch(player) {
+    case "Sachin":
+        console.log("Player is Sachin Tendulkar");
+        break;
+    case "Dhoni":
+        console.log("Player is Mahendra Singh Dhoni");
+        break;
+    case "Kohli":
+        console.log("Player is Virat Kohli");
+        break;
+    default:
+        console.log("Player not found");
+}
+
+
+
+
+
+// 5. Ternary Operator
+
+// Qs.
+let isCheck = true;
+let result = isCheck ? "Condition is correct" : "Condition is wrong";
+console.log(result);
