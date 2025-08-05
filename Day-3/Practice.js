@@ -51,12 +51,12 @@
 
 // Qs. Pattern:
 // let n = 4;
-// for(let i = 1; i <= n; i++){
+// for (let i = 1; i <= n; i++) {
 //     let res = "";
-//     for(let spaces = 1; spaces <= n-i; spaces++){
+//     for (let spaces = 1; spaces <= n - i; spaces++) {
 //         res += " ";
-//     } 
-//     for(let star = 1; star <= (2 * n) - 1; star++){
+//     }
+//     for (let star = 1; star <= (2 * n) - 1; star++) {
 //         res += "*";
 //     }
 //     console.log(res);
@@ -72,7 +72,7 @@
 //     let res = "";
 //     for(let spaces = 1; spaces <= n-i; spaces++){
 //         res += " ";
-//     } 
+//     }
 //     for(let star = 1; star <= i; star++){
 //         res += "* ";
 //     }
@@ -126,7 +126,7 @@
 //     for(let spaces = 1; spaces <= (n - i); spaces++){
 //         res += " ";
 //     }
-//     for(let star = 1; star <= (2 *i) - 1; star++){
+//     for(let star = 1; star <= (2 * i) - 1; star++){
 //         res += "*";
 //     }
 //     console.log(res);
@@ -164,7 +164,7 @@
 
 
 // Qs. Number pyramid with increasing-decreasing pattern.
-// let n = 3; 
+// let n = 3;
 // for (let i = 1; i <= n; i++) {
 //     let res = "";
 //     for (let spaces = 1; spaces <= n - i; spaces++) {
@@ -173,10 +173,10 @@
 //     let num = i;
 //     for (let j = 1; j <= i; j++) {
 //         res += num;
-//         num++; 
-//     } 
+//         num++;
+//     }
 //     num -=2
-//     for(let j = 1; j <i; j++){
+//     for(let j = 1; j < i; j++){
 //         res += num;
 //         num--;
 //     }
