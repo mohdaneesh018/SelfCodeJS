@@ -34,7 +34,7 @@
 // // 4. Print table of 7:-
 // let num = 7;
 // for (i = 1; i <= 10; i++) {
-//     console.log(i * 7);
+//     console.log(i * num);
 // }
 
 
@@ -67,9 +67,8 @@
 
 
 
-// 2. Print numbers from 10 to 1 (reverse):-
-// let num = 10;
-// let i= 1;
+// 2. Print numbers from 10 to 1 (reverse):- 
+// let i= 10;
 // while(i >= 1){
 //     console.log(i);
 //     i--;
