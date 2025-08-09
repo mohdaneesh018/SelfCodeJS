@@ -1,3 +1,12 @@
+// forEach method =>
+
+// Kaam: Har element par ek function chalata hai, return nahi karta (naya array nahi banata).
+// Use: Mostly tab jab tumhe sirf print, calculation, ya koi side-effect karna ho (database save, variable update, etc.).
+
+
+
+
+
 // Syntax of forEach() =>
     
 // array.forEach((element, index, array) => {
