@@ -78,9 +78,9 @@
 
 
 // Qs. Ek array [10, 20, 30, 40, 50] ka total sum find karo forEach ka use karke (sum variable bana ke update karte jao).
-let arr = [10, 20, 30, 40, 50];
-let sum = 0; 
-arr.forEach((currentNumber) => {    
-    sum += currentNumber;
-})
-console.log(sum);
+// let arr = [10, 20, 30, 40, 50];
+// let sum = 0; 
+// arr.forEach((currentNumber) => {    
+//     sum += currentNumber;
+// })
+// console.log(sum);
