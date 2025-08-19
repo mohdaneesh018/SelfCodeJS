@@ -1,4 +1,4 @@
-1. 1. Reverse an array
+1. Reverse an array
 Reverse the elements of an array manually (without using .reverse()).
 Input 1: [1, 2, 3]
 Output 1: [3, 2, 1]
@@ -86,11 +86,8 @@ Output 2: false
 
 let arr1 = [1, 2, 3];
 let arr2 = [1, 2, 3];
-
 let arr1 = [1, 2];
 let arr2 = [2, 1];
-let isCheck = false
-
 function arrayAreEqual(arr1, arr2) {
     for(let i = 0; i < arr1.length; i++){
         if(arr1[i] != arr2[i]){
@@ -255,3 +252,55 @@ Input 1: 5
 Output 1: 5
 Input 2: 6
 Output 2: 8
+
+
+
+
+
+
+11. Count frequency of array elements
+Return an object with count of each element in array.
+Input 1: [1, 2, 2, 3]
+Output 1: {1:1, 2:2, 3:1}
+Input 2: [4, 4, 4]
+Output 2: {4:3}
+
+// let arr = [1, 2, 2, 3];
+let arr = [4, 4, 4];
+let obj = {}
+function countFrequency(arr) {
+    for(let i = 0; i < arr.length; i++){
+        if(obj[arr[i]]){
+            obj[arr[i]]++;
+        } else {
+            obj[arr[i]] = 1;
+        }
+    }
+    return obj;
+}
+console.log(countFrequency(arr));
+
+
+
+
+
+
+
+12. Invert object (key value)
+Swap keys and values in an object.
+Input 1: {a:1, b:2}
+Output 1: {1:'a', 2:'b'}
+Input 2: {x:'y', z:'w'}
+Output 2: {'y':'x', 'w':'z'}
+
+// let obj = {a:1, b:2};
+let obj =  {x:'y', z:'w'};
+function invertObj(obj) {
+    let result = {};
+    for(let value in obj){
+        let values = obj[value];
+        result[values] = value;
+    }
+    return result;
+}
+console.log(invertObj(obj));
