@@ -260,7 +260,7 @@ function fibonacciNum(n) {
 
     if (n === 0) return 0;
     if (n === 1) return 1;
-    
+
     for (let i = 2; i <= n; i++) {
         num3 = num1 + num2;
         num1 = num2;
@@ -368,13 +368,176 @@ Output 1: "b"
 Input 2: {x: 100, y: 99}
 Output 2: "x"
 
-let obj = { a: 1, b: 5, c: 3 };
-let maxValue = 0;
-
+// let obj = { a: 1, b: 5, c: 3 };
+let obj = {x: 100, y: 99};
 function highestValue(obj) {
+let maxKey = null;
+let maxValue = -Infinity;
     for (let key in obj) {
-
+        if(obj[key] > maxValue){
+            maxValue = obj[key];
+            maxKey = key;
+        }
     }
-    return value;
+    return maxKey;
 }
 console.log(highestValue(obj));
+
+
+
+
+
+
+
+16. Check if string is palindrome
+Return true if string reads same forward and backward.
+Input 1: "madam"
+Output 1: true
+Input 2: "hello"
+Output 2: false
+
+let str = "madam"
+function isPalindrome(str) {
+    let reverseStr = ""
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseStr += str[i];
+        // console.log(str[i], "i");
+    }
+    return str == reverseStr;
+}
+console.log(isPalindrome(str));
+
+let str = "hello";
+function isPalindrome(str) {
+    let i = 0;
+    let j = str.length - 1;
+    while (i < j) {
+        if (str[i] == str[j]) {
+            return true;
+        }
+        i++;
+        j--;
+    }
+    return false;
+}
+console.log(isPalindrome(str));
+
+
+
+
+
+
+17. First non-repeating character
+Return the first character that does not repeat.
+Input 1: "aabbcdd"
+Output 1: "c"
+Input 2: "xxyz"
+Output 2: "y"
+
+let str = "aabbcdd";
+let str = "xxyz";
+function isNonRepeating(str) {
+    let frequency = {}
+    for (let i = 0; i < str.length; i++) {
+        if (frequency[str[i]]) {
+            frequency[str[i]]++;
+        } else {
+            frequency[str[i]] = 1;
+        }
+    }
+    for (let key in frequency) {
+        if(frequency[key] == 1) {
+            return key;
+        }
+    }
+}
+console.log(isNonRepeating(str));
+
+
+
+
+
+
+18. Reverse a string manually
+Reverse a string without using .reverse().
+Input 1: "hello"
+Output 1: "olleh"
+Input 2: "JS"
+Output 2: "SJ"
+
+let str = "hello";
+function reverseString(str) {
+    let reverseStr = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseStr += str[i];
+    }
+    return reverseStr;
+}
+console.log(reverseString(str));
+
+let str = "JS"
+function reverseString(str) {
+    let arr = str.split("");
+    let i = 0;
+    let j = arr.length - 1;
+    while (i < j) {
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+    return arr.join("");
+}
+console.log(reverseString(str));
+
+
+
+
+
+
+19. 19. Flatten nested array
+Convert a nested array into a single flat array.
+Input 1: [1, [2, [3]], 4]
+Output 1: [1, 2, 3, 4]
+Input 2: [[1], [2, 3]]
+Output 2: [1, 2, 3]
+
+// let arr = [1, [2, [3]], 4];
+let arr = [[1], [2, 3]];
+function flatten(arr) {
+    return arr.flat(2);
+}
+console.log(flatten(arr));
+
+
+
+
+
+
+20. Group array of objects by a property
+Group objects into an object by their type.
+Input 1: [{type:'fruit',name:'apple'},{type:'fruit',name:'banana'}]
+Output 1: {fruit: ['apple', 'banana']}
+Input 2: [{type:'a',name:'x'},{type:'b',name:'z'}]
+Output 2: {a:['x'], b:['z']}
+
+// let arr = [{ type: 'fruit', name: 'apple' }, { type: 'fruit', name: 'banana' }]
+let arr = [{type:'a',name:'x'},{type:'b',name:'z'}];
+function groupByType(arr) {
+    let result = {};
+
+    for (let item of arr) {
+        let type = item.type;
+        let name = item.name;
+
+        if (!result[type]) {
+            result[type] = []; 
+        }
+
+        result[type].push(name);
+    }
+
+    return result;
+}
+console.log(groupByType(arr));
