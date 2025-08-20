@@ -253,6 +253,23 @@ Output 1: 5
 Input 2: 6
 Output 2: 8
 
+function fibonacciNum(n) {
+    let num1 = 0;
+    let num2 = 1;
+    let num3;
+
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    
+    for (let i = 2; i <= n; i++) {
+        num3 = num1 + num2;
+        num1 = num2;
+        num2 = num3;
+    }
+    return num3;
+}
+console.log(fibonacciNum(5));     // 5
+console.log(fibonacciNum(6));     // 8
 
 
 
@@ -297,10 +314,67 @@ Output 2: {'y':'x', 'w':'z'}
 let obj =  {x:'y', z:'w'};
 function invertObj(obj) {
     let result = {};
-    for(let value in obj){
-        let values = obj[value];
-        result[values] = value;
+    for(let key in obj){
+        let values = obj[key];
+        result[values] = key;
     }
     return result;
 }
 console.log(invertObj(obj));
+
+
+
+
+
+13. Merge two objects
+Combine two objects into one.
+Input 1: {a:1}, {b:2}
+Output 1: {a:1, b:2}
+Input 2: {x:10}, {x:20, y:30}
+Output 2: {x:20, y:30}
+
+let obj1 = { a: 1 };
+let obj2 = { b: 2 };
+
+function mergeObject(obj1, obj2) {
+    return {...obj1, ...obj2};
+}
+console.log(mergeObject(obj1, obj2));
+
+let obj1 = { x: 10 };
+let obj2 = { x: 20, y: 30 };
+let result = {};
+
+function mergeObject(obj1, obj2) {
+    for (let key in obj1) {
+        result[key] = obj1[key];
+    }
+    for (let key in obj2) {
+        result[key] = obj2[key];
+    }
+    return result;
+}
+console.log(mergeObject(obj1, obj2));
+
+
+
+
+
+
+14. Find key with highest value in object
+Return the key which has the highest numeric value.
+Input 1: {a: 1, b: 5, c: 3}
+Output 1: "b"
+Input 2: {x: 100, y: 99}
+Output 2: "x"
+
+let obj = { a: 1, b: 5, c: 3 };
+let maxValue = 0;
+
+function highestValue(obj) {
+    for (let key in obj) {
+
+    }
+    return value;
+}
+console.log(highestValue(obj));
