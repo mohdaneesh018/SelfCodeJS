@@ -118,3 +118,91 @@ console.log(stu1.name, stu1.getResult());
 const stu2 = new Student("Afzal", 32);
 // console.log(stu2);
 console.log(stu2.marks, stu2.getResult());
+
+
+
+
+
+
+4. Class
+
+Q6. Ek class Product banao jisme name, price, discount ho.
+Method getFinalPrice() likho jo discount ke baad ka price return kare.
+Do alag products ke object banao aur final price print karo. 
+
+class Product {
+    constructor(name, price, discount) {
+        this.name = name;
+        this.price = price;
+        this.discount = discount;
+    } 
+
+    getFinalPrice() {
+        this.price = this.price - this.discount;
+        return ("After discount price is:", this.price);
+    } 
+} 
+
+const obj1 = new Product("Sahid", 50000, 5000);
+const obj2 = new Product("Imran", 80000, 3000);
+
+console.log(`Final Price is ${obj1.name} :`, obj1.getFinalPrice());
+console.log(`Final Price is ${obj2.name} :`, obj2.getFinalPrice());
+
+
+
+
+
+5. Async/Await + Promise
+
+Q7. Ek function fetchData() banao jo 2 second ke baad "Data Loaded" return kare.
+Fir ek async function banao jo await fetchData() kare aur result print kare.
+
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data Loaded");
+        }, 2000);
+    })
+}
+async function data() {
+    try {
+        const result = await fetchData();
+        console.log(result, "result");
+    } catch (error) {
+        console.log("error message", error);
+    }
+}
+data();
+
+
+
+
+
+
+Q8. Ek function checkNumber(num) banao jo promise return kare.
+Agar number even hai to "Even number" resolve kare
+Agar odd hai to "Odd number" reject kare
+Isse async/await aur try/catch use karke handle karo
+
+function checkNumber(num) {
+    return new Promise((resolve, reject) => {
+        if (num % 2 == 0) {
+            resolve("Number is Even");
+        } else {
+            reject("Number is Odd");
+        }
+    })
+}
+async function data() {
+    try {
+        // const result = await checkNumber(11);
+         const result = await checkNumber(12);
+        console.log(result, "result");
+    } catch (error) {
+        console.log("Error message:", error);
+    } finally {
+        console.log("Result Created.");
+    }
+}
+data();
