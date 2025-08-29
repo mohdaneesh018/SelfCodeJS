@@ -28,7 +28,7 @@ Output 1: 10
 Input 2: [1, 2, 2, 3]
 Output 2: 2
 
-let arr = [10, 5, 20, 8];
+// let arr = [10, 5, 20, 8];
 let arr = [1, 2, 2, 3];
 let max = 0;
 let secMax = 0;
@@ -84,8 +84,8 @@ Input 2: [1, 2], [2, 1]
 Output 2: false
 
 
-let arr1 = [1, 2, 3];
-let arr2 = [1, 2, 3];
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
 let arr1 = [1, 2];
 let arr2 = [2, 1];
 function arrayAreEqual(arr1, arr2) {
@@ -341,6 +341,8 @@ function mergeObject(obj1, obj2) {
 }
 console.log(mergeObject(obj1, obj2));
 
+OR
+
 let obj1 = { x: 10 };
 let obj2 = { x: 20, y: 30 };
 let result = {};
@@ -434,7 +436,7 @@ Output 1: "c"
 Input 2: "xxyz"
 Output 2: "y"
 
-let str = "aabbcdd";
+// let str = "aabbcdd";
 let str = "xxyz";
 function isNonRepeating(str) {
     let frequency = {}
