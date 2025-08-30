@@ -55,7 +55,7 @@ function arrayofObject(arr) {
     return result;
 }
 console.log(arrayofObject([{ id: 1, name: "A" }, { id: 2, name: "B" }]));
- 
+
 
 
 
@@ -100,3 +100,39 @@ function objtoArray(obj) {
     return newArr;
 }
 console.log(objtoArray({ a: 1, b: 2 }));
+
+
+
+
+
+
+Q9. Binary Search in Sorted Array
+Input: [1, 3, 5, 7, 9], Target = 5
+Output: 2 (Index of 5)
+Implement binary search manually
+
+let nums = [1, 3, 5, 7, 9];
+let target = 5;
+
+function binarySearch(nums) {
+    for (let i = 0; i < nums.length; i++) {
+        let left = 0;
+        let right = nums.length - 1;
+
+        while (left <= right) {
+            let midIndex = Math.floor((left + right) / 2);
+            let midElement = nums[midIndex];
+
+            if(target == midElement) {
+                return midIndex;
+            } else if(target > midElement) {
+                left = midIndex + 1;
+            } else {
+                right = midIndex - 1;
+            } 
+        }
+    }
+}
+console.log(binarySearch(nums));
+
+
