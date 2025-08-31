@@ -21,7 +21,7 @@ function firstNonRepeating(arr) {
     }
     return;
 }
-console.log(firstNonRepeating([4, 5, 1, 2, 0, 4, 1, 0])); 
+console.log(firstNonRepeating([4, 5, 1, 2, 0, 4, 1, 0]));
 
 
 
@@ -129,10 +129,33 @@ function binarySearch(nums) {
                 left = midIndex + 1;
             } else {
                 right = midIndex - 1;
-            } 
+            }
         }
     }
 }
 console.log(binarySearch(nums));
 
 
+
+
+
+
+
+ Q10. Group Elements by Frequency
+Input: [1, 1, 2, 3, 3, 3]
+Output:
+{ "1": 2, "2": 1, "3": 3 }
+Use object to group and count occurrences
+
+function elementFrequency(arr) {
+    let frequency = {}
+    for (let i = 0; i < arr.length; i++) {
+        if (frequency[arr[i]]) {
+            frequency[arr[i]]++;
+        } else {
+            frequency[arr[i]] = 1;
+        }
+    }
+    return frequency;
+}
+console.log(elementFrequency([1, 1, 2, 3, 3, 3]));
