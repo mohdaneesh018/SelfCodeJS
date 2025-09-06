@@ -1,7 +1,5 @@
 console.log("Hello");
 
-
-
 console.log(1, "Local Storage");
 // LOCAL STORAGE ==> isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
 // phr se start krenge to local storage k andr item rhenge age isko comment krdenge tb bhi ye wahi rhega jab tk isko waha se remove 
@@ -25,34 +23,6 @@ localStorage.setItem("standard", 9);                   // isse phr se add hue
 // localStorage.clear();                              // isse local storage pura clear hojata h 
 
 
-
-
-
-
-console.log(2, "Session Storage");
-// Session Storage => isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
-// lekin window jese bnd krenge session storage khali hojayega wo automatic delete hojayenge halanki local storage m wo rhenge
-// data sirf tab tak rahega jab tak tab/window open hai. Window close hote hi clear ho jata hai.
-
-    sessionStorage.setItem("isLoggedIn", true);
-    sessionStorage.setItem("isLoggedOut", false);
-
-
-    console.log(sessionStorage.getItem("isLoggedOut"), "isLoggedOut");
-
-
-    sessionStorage.removeItem("isLoggedOut");
-
-
-    sessionStorage.setItem("isLoggedBreak", "Break");
-
-
-    // sessionStorage.clear(); 
-
-
-
-
-
 // Local Storage json.stringify with example
 // Qs. 1
 
@@ -60,7 +30,7 @@ let user = {
     name: "Aneesh",
     age: 20,
     city: "Mumbai"
-} ;
+};
 
 // Step 2: Object ko stringify karke LocalStorage me save karo
 localStorage.setItem("userData", JSON.stringify(user));
@@ -99,6 +69,26 @@ console.log(parsedskillsData[2]);
 
 
 
+
+console.log(2, "Session Storage");
+// Session Storage => isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
+// lekin window jese bnd krenge session storage khali hojayega wo automatic delete hojayenge halanki local storage m wo rhenge
+// data sirf tab tak rahega jab tak tab/window open hai. Window close hote hi clear ho jata hai.
+
+sessionStorage.setItem("isLoggedIn", true);
+sessionStorage.setItem("isLoggedOut", false);
+
+
+console.log(sessionStorage.getItem("isLoggedOut"), "isLoggedOut");
+
+
+sessionStorage.removeItem("isLoggedOut");
+
+
+sessionStorage.setItem("isLoggedBreak", "Break");
+
+
+// sessionStorage.clear(); 
 
 
 // Session Storage json.stringify with example
