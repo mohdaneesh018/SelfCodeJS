@@ -1,9 +1,9 @@
 console.log("Hello");
 
 console.log(1, "Local Storage");
-// LOCAL STORAGE ==> isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
-// phr se start krenge to local storage k andr item rhenge age isko comment krdenge tb bhi ye wahi rhega jab tk isko waha se remove 
-// n krenge ya phr removeitem n krenge tb tk data tab tak save rahega jab tak manually remove/clear na karo (browser close hone ke baad bhi).
+LOCAL STORAGE ==> isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
+phr se start krenge to local storage k andr item rhenge age isko comment krdenge tb bhi ye wahi rhega jab tk isko waha se remove 
+n krenge ya phr removeitem n krenge tb tk data tab tak save rahega jab tak manually remove/clear na karo (browser close hone ke baad bhi).
 
 
 localStorage.setItem("name", "Aneesh");
@@ -20,11 +20,11 @@ localStorage.removeItem("city");                     // isse item remove hota h
 localStorage.setItem("standard", 9);                   // isse phr se add hue
 
 
-// localStorage.clear();                              // isse local storage pura clear hojata h 
+localStorage.clear();                              // isse local storage pura clear hojata h 
 
 
-// Local Storage json.stringify with example
-// Qs. 1
+Local Storage json.stringify with example
+Qs. 1
 
 let user = {
     name: "Aneesh",
@@ -50,7 +50,7 @@ console.log(parsedData.city);
 
 
 
-// Qs. 2
+Qs. 2
 let skills = ["HTML", "CSS", "JavaScript"];
 
 localStorage.setItem("language", JSON.stringify(skills));
@@ -71,9 +71,9 @@ console.log(parsedskillsData[2]);
 
 
 console.log(2, "Session Storage");
-// Session Storage => isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
-// lekin window jese bnd krenge session storage khali hojayega wo automatic delete hojayenge halanki local storage m wo rhenge
-// data sirf tab tak rahega jab tak tab/window open hai. Window close hote hi clear ho jata hai.
+Session Storage => isme ek br key or value add krdiya phr wo whi rhega jab tk apn khud usko n htade tb tk or browser bnd krne k bd
+lekin window jese bnd krenge session storage khali hojayega wo automatic delete hojayenge halanki local storage m wo rhenge
+data sirf tab tak rahega jab tak tab/window open hai. Window close hote hi clear ho jata hai.
 
 sessionStorage.setItem("isLoggedIn", true);
 sessionStorage.setItem("isLoggedOut", false);
@@ -88,11 +88,11 @@ sessionStorage.removeItem("isLoggedOut");
 sessionStorage.setItem("isLoggedBreak", "Break");
 
 
-// sessionStorage.clear(); 
+sessionStorage.clear(); 
 
 
-// Session Storage json.stringify with example
-// Qs. 1
+Session Storage json.stringify with example
+Qs. 1
 
 let courses = ["React", "Node", "MongoDB"];
 
@@ -116,7 +116,7 @@ console.log(coursesParseData[2]);
 
 
 
-// Qs. 2
+Qs. 2
 let student = {
     name: "Mohit",
     age: 35
