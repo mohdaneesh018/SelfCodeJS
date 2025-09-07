@@ -150,7 +150,7 @@ function singleRows(nums) {
             result.push(nums[i][j]);
         }
     }
-    return result;
+    return (result);
 }
 console.log(singleRows(nums));
 
