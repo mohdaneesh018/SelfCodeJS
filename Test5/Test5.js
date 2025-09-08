@@ -19,13 +19,13 @@ let nums =
         [3, 4],
         [5, 6]
     ]
-function transposeMatrix(nums) {
+function transposeMatrix(arr) {
     let result = [];
 
-    for (let i = 0; i < nums[0].length; i++) {
+    for (let i = 0; i < arr[0].length; i++) {
         let row = [];
-        for (let j = 0; j < nums.length; j++) {
-            row.push(nums[j][i]);
+        for (let j = 0; j < arr.length; j++) {
+            row.push(arr[j][i]);
         }
         result.push(row);
     }
