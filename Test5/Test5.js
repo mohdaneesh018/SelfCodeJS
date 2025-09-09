@@ -32,3 +32,24 @@ function transposeMatrix(arr) {
     return result;
 }
 console.log(transposeMatrix(nums));
+
+
+
+
+
+
+2. Diagonal Sum of Square Matrix
+Description: Find the sum of both main diagonals.
+Input:
+[
+   [1, 2, 3],
+   [4, 5, 6],
+   [7, 8, 9]
+]
+Output: 25 (1+5+9 + 3+5+7 – 5 (counted twice))
+
+let nums = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
