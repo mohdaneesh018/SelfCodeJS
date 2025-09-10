@@ -53,3 +53,19 @@ let nums = [
     [4, 5, 6],
     [7, 8, 9]
 ];
+
+function isDiagonal(nums) {
+    let sum = 0;
+    let n = nums.length;
+
+    for (let i = 0; i < n; i++) {
+        sum += nums[i][i];
+
+        if (i !== n - i - 1) {
+            sum += nums[i][n - i - 1];
+        }
+    }
+    return sum;
+}
+
+ console.log("Diagonal Sum:", isDiagonal(nums));
