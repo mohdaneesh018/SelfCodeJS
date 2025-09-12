@@ -132,18 +132,3 @@ function isSpiralMatrix(nums) {
 }
 
 console.log(isSpiralMatrix(nums));
-
-
-
-
-
-
-
-4. Search in 2D Matrix
-Description: Return true if a given element exists.
-    Input: matrix + target = 5
-    [
-        [1, 2, 3],
-        [4, 5, 6]
-    ]
-Output: true
