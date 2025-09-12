@@ -69,3 +69,81 @@ function isDiagonal(nums) {
 }
 
  console.log("Diagonal Sum:", isDiagonal(nums));
+
+
+
+
+
+3. Spiral Print of Matrix
+Description: Print elements in spiral order.
+    Input:
+[
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+let nums = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+function isSpiralMatrix(nums) {
+    const result = [];
+    let left = 0;
+    let right = nums[0].length - 1;
+    let top = 0;
+    let bottom = nums.length - 1;
+
+    while (left <= right && top <= bottom) {
+
+        // left --> right
+        for (let i = left; i <= right; i++) {
+            result.push(nums[top][i]);
+        }
+        top++;
+
+        // top --> bottom 
+        for (let i = top; i <= bottom; i++) {
+            result.push(nums[i][right]);
+        }
+        right--;
+
+        // right --> left
+        if (top <= bottom) {
+            for (let i = right; i >= left; i--) {
+                result.push(nums[bottom][i]);
+            }
+            bottom--;
+        }
+
+        // bottom --> top
+        if (left <= right) {
+            for (let i = bottom; i >= top; i--) {
+                result.push(nums[i][left]);
+            }
+            left++;
+        }
+        console.log(top, "top", bottom, "bottom", right, "right", left, "left");
+    }
+    return result;
+}
+
+console.log(isSpiralMatrix(nums));
+
+
+
+
+
+
+
+4. Search in 2D Matrix
+Description: Return true if a given element exists.
+    Input: matrix + target = 5
+    [
+        [1, 2, 3],
+        [4, 5, 6]
+    ]
+Output: true
