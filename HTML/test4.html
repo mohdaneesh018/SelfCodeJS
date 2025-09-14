@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox 3 Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px; /* space between columns */
+      border: 2px solid #444;
+      padding: 15px;
+      height: 250px;
+    }
+
+    .box {
+      background: lightblue;
+      padding: 20px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+      flex-grow: 1; /* all columns grow equally */
+    }
+
+    .box:nth-child(2) {
+      background: lightgreen;
+      align-self: flex-end; /* customize only 2nd column */
+    }
+
+    .box:nth-child(3) {
+      background: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Flexbox 3-Column Layout</h2>
+
+  <div class="container">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2 (Aligned Bottom)</div>
+    <div class="box">Column 3</div>
+  </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Layout Example</title>
+  
+  <!-- ✅ Viewport Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: lightblue;
+      font-size: 20px;
+    }
+
+    /* ✅ Media Query for screens less than 768px */
+    @media (max-width: 768px) {
+      .box {
+        background-color: lightgreen;
+        font-size: 16px;
+      }
+    }
+
+    /* ✅ Media Query for screens more than 1024px */
+    @media (min-width: 1024px) {
+      .box {
+        background-color: lightcoral;
+        font-size: 24px;
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Responsive Web Design Example</h2>
+  <div class="box">
+    Resize the browser window 👀<br>
+    Background and font-size will change!
+  </div>
+
+</body>
+</html>
+

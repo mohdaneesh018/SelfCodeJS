@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio WebPage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2>Mohd Aneesh</h2>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#Skill">Skill</a></li>
+      <li><a href="#Project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h3>Contact Form</h3>
+    <form>
+      <section>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Enter a name" name="name" required>
+      </section>
+      <section>
+        <label for="email">Enter an email:</label><br>
+        <input type="email" id="email" placeholder="Enter an email" name="email" required>
+      </section>
+      <section>
+        <label for="message">Enter a message:</label><br>
+        <textarea name="message" id="message" placeholder="Enter your message" rows="4" cols="40"></textarea>
+      </section>
+      <section>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+      </section>
+      <section>
+        <label>You are eligible for vote?</label><br>
+        <input type="radio" name="vote" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="vote" id="no" value="no">
+        <label for="no">No</label>
+      </section>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h3>Skills Section</h3>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Math</th>
+          <th colspan="2">English</th>
+          <th>Science</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">45</td>
+          <td colspan="2">56</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td colspan="2">67</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Examples -->
+  <section>
+    <strong>This is a mango</strong><br>
+    <em>Junk Food</em>
+    <p>Water Molecule: H<sub>2</sub>O</p>
+    <p>Einstein formula: mc<sup>2</sup></p>
+  </section>
+
+</body>
+
+</html>
