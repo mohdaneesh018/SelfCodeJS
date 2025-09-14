@@ -163,3 +163,286 @@ console.log(studentData, "studentData");
 
 let parsedData = JSON.parse(studentData);
 console.log(parsedData, "parseData");
+
+
+
+
+
+
+Qs.
+let n = 4;
+
+for (let i = 1; i <= n; i++) {
+    let res = "";
+    for (let spaces = 1; spaces <= n - i; spaces++) {
+        res += " ";
+    }
+    for (let star = 1; star <= (2 * i) - 1; star++) {
+        res += "*";
+    }
+    console.log(res);
+}
+
+for (let i = 1; i <= n - 1; i++) {
+    let res = "";
+    for (let spaces = 1; spaces <= i; spaces++) {
+        res += " ";
+    }
+    for (let star = 1; star <= 2 * (n - i) - 1; star++) {
+        res += "*"
+    }
+    console.log(res);
+}
+
+
+
+
+
+
+Qs. 8. Use switch-case to perform basic arithmetic operations (+, -, *, /) based on the
+// operator input.
+let a = 6;
+let b = 5;
+let operator = "+";
+
+switch (operator) {
+    case "+":
+        console.log(a + b);
+        break;
+    case "-":
+        console.log(a - b);
+        break;
+
+    case "*":
+        console.log(a * b);
+        break;
+
+    case "/":
+        console.log(a / b);
+        break;
+    case "%":
+        console.log(a % b);
+        break;
+    default:
+        break;
+}
+
+
+
+
+
+Qs.
+let fact = 1;
+let num = 5;
+while(num >= 1) {
+    fact = fact * num;
+    num--
+}
+console.log(fact);
+
+
+
+
+
+Qs.
+let sum = 0;
+for(let i = 1; i <= 100; i++) {
+    sum += i;
+}
+console.log(sum);
+
+
+
+
+
+
+// Qs. 8. Write a program using a loop and switch to print:
+// ○ "Fizz" if the number is divisible by 3
+// ○ "Buzz" if divisible by 5
+// ○ "FizzBuzz" if divisible by both
+// ○ Else print the number
+// (From 1 to 50)
+for (let i = 1; i <= 50; i++) {   
+    let output = "";
+
+    if (i % 3 === 0) output += "Fizz";
+    if (i % 5 === 0) output += "Buzz";
+
+    switch (output) {
+        case "Fizz":
+            console.log("Fizz");
+            break;
+        case "Buzz":
+            console.log("Buzz");
+            break;
+        case "FizzBuzz":
+            console.log("FizzBuzz");
+            break;
+        default:
+            console.log(i);
+    }
+}
+
+
+
+
+
+
+
+Qs. fibonacci 
+let a = 0;
+let b = 1;
+let sum = 0;
+let i = 0;
+while (i < 10) {
+    console.log(a)
+    sum = a + b;
+    a = b;
+    b = sum;
+    i++;
+}
+
+
+
+
+
+
+// Qs. 10. Using a for loop, print the square of numbers from 1 to 10 and categorize them using
+// if:
+// ● Less than 20: “Small”
+// ● Between 20–50: “Medium”
+// ● More than 50: “Large”
+
+for (let i = 1; i <= 10; i++) {
+    let square = i * i;
+    if (square < 20) {
+        console.log(`${square} - Small`);
+    } else if (square >= 20 && square <= 50) {
+        console.log(`${square} - Medium`);
+    } else {
+        console.log(`${square} - Large`);
+    }
+}
+
+
+
+Qs.
+let num = [22, 45, 67, 89];
+console.log(num.at(3));
+console.log(num.at(-2));
+
+
+
+Qs.
+let arr = [12, 24, 36, 48, 60];
+console.log(arr.indexOf(48));
+console.log(arr.indexOf(24));
+
+
+
+
+
+Qs.
+let arr = [12, 24, 36, 48, 60, 72, 84, 96];
+console.log(arr.slice(3)); 
+console.log(arr.slice(5)); 
+console.log(arr.slice(3, 6)); 
+console.log(arr.slice(3, -2)); 
+
+
+
+
+
+ Qs.
+let num = [1, 2, 3];
+let output = [];
+for(let i = 0; i < num.length; i++){
+    output.push(num[i] * 10);
+}
+console.log(output, "Output"); 
+
+
+
+
+
+Qs.
+let arr = [12, 23, 45, 34, 56, 98, 78];
+let target = 45;
+for (let i = arr.length - 1; i >= 0; i--) {
+    if (target == arr[i]) {
+        console.log(i);
+        break;
+    }
+}
+
+
+
+
+ Qs. using filter
+let stu = [2, 3, 4, 5, 6, 9];
+let newStu = stu.filter((i)=> i % 2 == 0);
+console.log(newStu);
+
+
+
+
+
+Qs. Ek array [10, 20, 30, 40, 50] ka total sum find karo forEach ka use karke (sum variable bana ke update karte jao).
+let arr = [10, 20, 30, 40, 50];
+let sum = 0; 
+arr.forEach((currentNumber) => {    
+    sum += currentNumber;
+})
+console.log(sum);
+
+
+
+
+Qs.Ek array me employees ke naam ["Aman", "Ravi"] ke saath " - ID: 101", " - ID: 102" jod ke naya array return karo (index ka use karke ID add karo).
+let arr = ["Aman", "Ravi"];
+let newArr = arr.map((name, index) => name + " - ID: " + (101 + index));
+console.log(newArr); 
+
+Qs. Ek array of numbers [5, 10, 15, 20] ka har element ka square aur cube dono ek saath object ke form me return karo, jaise:
+// [
+  { number: 5, square: 25, cube: 125 },
+  { number: 10, square: 100, cube: 1000 }
+]
+let num = [5, 10, 15, 20];
+let newNum = num.map(n => ({ 
+    number: n, 
+    square: n * n, 
+    cube: n * n * n 
+}));
+console.log(newNum);
+
+
+
+
+
+
+ Qs. Check karo ki saare numbers even hain.
+let arr = [2, 4, 6, 8];
+let newArr = arr.every((n) => n % 2 == 0);
+console.log(newArr);
+
+
+
+
+
+
+Qs.
+let fruits = ["apple", "banana", "orange"];
+let iterator = fruits.entries();
+for (let [index, value] of iterator) {
+    console.log(index, value);
+} 
+
+
+
+
+
+Qs.
+let a = "Hello World";
+let b = a.split(" ");
+console.log(b);
