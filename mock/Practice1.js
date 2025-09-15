@@ -541,3 +541,171 @@ canVote(age)
     .catch((error) => {
         console.log(error, "error");
     })
+
+
+
+
+
+Qs.
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Prducts")
+        }, 3000);
+    });
+}
+
+async function data() {
+    try {
+        const result = await fetchData();
+        console.log(result, "result");
+    } catch (error) {
+        console.log(error, "error");
+    }
+}
+data();
+
+
+
+Qs.
+class Teacher {
+    constructor(name, subject) {
+        this.name = name;
+        this.subject = subject;
+    }
+    teach() {
+        console.log(`${this.name} teaches ${this.subject}`);
+    }
+}
+const user1 = new Teacher("rahul", "html");
+console.log(user1, "user1");
+
+
+
+
+
+
+Q3. Ek class BankAccount banao jisme properties ho: name, balance.
+Method deposit(amount) jo balance badhaye.
+Method withdraw(amount) jo balance kam kare. Agar balance se zyada withdraw ho to "Insufficient Funds" print ho.
+Fir ek object banao aur deposit + withdraw test karo. (Hard – real life example)
+
+class BankAccount {
+    constructor(name, balance) {
+        this.name = name;
+        this.balance = balance;
+    }
+
+    deposit() {
+        let amount = 3000;
+        this.balance = this.balance + amount;
+        console.log("Total balance is after deposit:", this.balance);
+    }
+
+    withdraw() {
+        // let withdrawAmount = 10000;
+        let withdrawAmount = 50000;
+
+        if (withdrawAmount <= this.balance) {
+            this.balance = this.balance - withdrawAmount;
+            console.log("Total balance is after withdraw:", this.balance);
+        } else {
+            console.log("Insufficient balance");
+        }
+    }
+}
+
+const bankManager = new BankAccount("Rahul", 45000);
+console.log(bankManager.deposit());
+console.log(bankManager.withdraw());
+
+
+
+
+
+
+Qs.
+function fetchUserData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("User Data Loaded");
+        }, 3000);
+    })
+}
+async function data() {
+    try {
+        const result = await fetchUserData()
+        console.log(result, "result");
+    } catch (error) {
+        console.log(error, "error");
+    }
+}
+data();
+
+
+
+
+
+Qs.
+let nums = [10, 20, 30, 40, 50, 60, 70, 80];
+let target = 40;
+
+function binarySearch(nums) {
+    let left = 0;
+    let right = nums.length - 1;
+
+    while(left <= right) {
+        let middleIndex = Math.round((left + right) / 2);
+        let middleElement = nums[middleIndex];
+
+        if(target == middleElement) {
+            return middleIndex;
+        } else if(target > middleElement) {
+            left = middleIndex + 1;
+        } else {
+            right = middleIndex - 1;
+        }
+    }
+    return middleIndex;
+}
+console.log(binarySearch(nums));
+
+
+
+
+
+
+// Qs.
+class Product {
+    constructor(name, price, discount) {
+        this.name = name;
+        this.price = price;
+        this.discount = discount;
+    }
+
+    getFinalPrice() {
+        this.price = this.price - this.discount;
+        return (`After discount price is: ${this.price}`);
+    }
+}
+
+const stu1 = new Product("Sahid", 25000, 3000);
+console.log(`Final Price is ${stu1.name} : ${stu1.getFinalPrice()}`); 
+
+
+
+
+
+
+Closure
+function outerfunction() {
+    let counter = 0;
+    function innerfunction() {
+        counter++;
+        console.log(counter);
+    }
+    return innerfunction;
+}
+const result= outerfunction();
+result();
+result();
