@@ -446,3 +446,98 @@ Qs.
 let a = "Hello World";
 let b = a.split(" ");
 console.log(b);
+
+
+
+
+
+
+Qs.
+let arr = [
+  [1,  2,  3,  4],
+  [5,  6,  7,  8],
+  [9, 10, 11, 12],
+  [13,14, 15, 16]
+];
+
+function printZ(arr) {
+  let n = arr.length;
+
+  // 🔹 top row
+  for (let j = 0; j < n; j++) {
+    console.log(arr[0][j]);
+  }
+
+  // 🔹 diagonal
+  for (let i = 1; i < n - 1; i++) {
+    console.log(arr[i][n - 1 - i]);
+  }
+
+  // 🔹 bottom row
+  for (let j = 0; j < n; j++) {
+    console.log(arr[n - 1][j]);
+  }
+}
+printZ(arr);
+
+
+
+
+
+
+function printN(arr) {
+  let n = arr.length;
+
+  // 🔹 left column
+  for (let i = 0; i < n; i++) {
+    console.log(arr[i][0]);
+  }
+
+  // 🔹 diagonal
+  for (let i = 1; i < n - 1; i++) {
+    console.log(arr[n - 1 - i][i]);
+  }
+
+  // 🔹 right column
+  for (let i = 0; i < n; i++) {
+    console.log(arr[i][n - 1]);
+  }
+}
+printN(arr);
+
+
+
+
+
+
+Qs.
+function removeDuplicates(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!newArr.includes(arr[i])) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(removeDuplicates([99, 28, 99, 28, 45]));
+
+
+// Qs.
+let age = 34;
+const canVote = ((age) => {
+    return new Promise((resolve, reject) => {
+        if(age >= 18) {
+            resolve("you can vote");
+        } else {
+            reject("you can't vote.");
+        }
+    })
+});
+canVote(age)
+    .then((response) => {
+        console.log(response, "response");
+    })
+    .catch((error) => {
+        console.log(error, "error");
+    })
