@@ -138,7 +138,6 @@ function sumDiagonal(arr) {
     }
     return sum;
 }
-
 console.log(sumDiagonal(nums));
 
 
@@ -150,7 +149,7 @@ Qs. 3. LocalStorage me ek student ka object store karna hai:
 Tumhe JSON.stringify use karke save karna hoga aur JSON.parse se wapas print karna hoga.
 
 let student = {
-    name: "Aneesh",
+    name: "Aneesh",  
     age: 20,
     course: "CSE"
 };
@@ -709,3 +708,30 @@ function outerfunction() {
 const result= outerfunction();
 result();
 result();
+
+
+
+
+
+Qs. Inheritance 
+class User {
+    constructor(name, surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+    greetUser() {
+        console.log(`Hello ${this.name} ${this.surname}`);
+    }
+}
+
+class Student extends User {
+    greetStudent() {
+        console.log(`Good morning! ${this.name} ${this.surname} from extends USer`);
+    }
+}
+
+const myUser = new User("Rohit", "Sharma");
+myUser.greetUser();
+
+const myStudent = new Student("Suresh", "Raina");
+myStudent.greetStudent();
