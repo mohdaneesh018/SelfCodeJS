@@ -1,7 +1,7 @@
 QS.
 
 let numbers = [100, 2, 3, 2, 4, 5, 100, 3, 4, 6, 100, 2, 100];
-function numCount(num) {
+function numCount(numbers) {
     var pairs = {}
     for (let i = 0; i < numbers.length; i++) {
         if (pairs[numbers[i]]) {
