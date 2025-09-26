@@ -1,66 +1,66 @@
-// QS.
+QS.
 
-// let numbers = [100, 2, 3, 2, 4, 5, 100, 3, 4, 6, 100, 2, 100];
-// function numCount(num) {
-//     var pairs = {}
-//     for (let i = 0; i < numbers.length; i++) {
-//         if (pairs[numbers[i]]) {
-//             pairs[numbers[i]]++;
-//         } else {
-//             pairs[numbers[i]] = 1;
-//         }
-//     }
+let numbers = [100, 2, 3, 2, 4, 5, 100, 3, 4, 6, 100, 2, 100];
+function numCount(num) {
+    var pairs = {}
+    for (let i = 0; i < numbers.length; i++) {
+        if (pairs[numbers[i]]) {
+            pairs[numbers[i]]++;
+        } else {
+            pairs[numbers[i]] = 1;
+        }
+    }
 
-//     let max = 0;
-//     let value = null;
-//     for (let key in pairs) {
-//         if (pairs[key] > max) {
-//             max = pairs[key];
-//             value = key;
-//             console.log(max, "max", value, "value");
-//         }
-//     }
-//     return value;
-// }
+    let max = 0;
+    let value = null;
+    for (let key in pairs) {
+        if (pairs[key] > max) {
+            max = pairs[key];
+            value = key;
+            console.log(max, "max", value, "value");
+        }
+    }
+    return value;
+}
 
-// console.log(numCount(numbers));
-
-
-
-
-
-
-// Using Binary Search
-
-// let nums = [10, 20, 30, 40, 50, 60, 70, 80];
-// let target = 40;
-
-// function BinarySearch(nums) {
-//     let left = 0;
-//     let right = nums.length - 1;
-
-//     while (left <= right) {
-//         let middleIndex = Math.round((left + right) / 2);
-//         let middleElement = nums[middleIndex];
-
-//         if (target == middleElement) {
-//             return middleIndex;
-//         } else if (target > middleElement) {
-//             left = middleIndex + 1;
-//         } else {
-//             right = middleIndex - 1;
-//         }
-//     }
-//     return -1;
-// }
-// console.log(BinarySearch(nums));
+console.log(numCount(numbers));
 
 
 
 
 
 
-// Qs.
+Using Binary Search
+
+let nums = [10, 20, 30, 40, 50, 60, 70, 80];
+let target = 40;
+
+function BinarySearch(nums) {
+    let left = 0;
+    let right = nums.length - 1;
+
+    while (left <= right) {
+        let middleIndex = Math.round((left + right) / 2);
+        let middleElement = nums[middleIndex];
+
+        if (target == middleElement) {
+            return middleIndex;
+        } else if (target > middleElement) {
+            left = middleIndex + 1;
+        } else {
+            right = middleIndex - 1;
+        }
+    }
+    return -1;
+}
+console.log(BinarySearch(nums));
+
+
+
+
+
+
+Qs.
 let nums = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
