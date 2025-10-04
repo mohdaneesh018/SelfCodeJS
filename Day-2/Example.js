@@ -1,7 +1,7 @@
-// Loops
-// 1. For Loop
+Loops
+1. For Loop
 
-// Qs.
+Qs.
 for (let i = 1; i <= 3; i++) {
     console.log("Aneesh", i);
 }
@@ -9,9 +9,9 @@ for (let i = 1; i <= 3; i++) {
 
 
 
-// 2. While Loop
+2. While Loop
 
-// Qs.
+Qs.
 let i = 1;
 while (i <= 5) {
     console.log(i);
@@ -21,9 +21,9 @@ while (i <= 5) {
 
 
 
-// 3. Do-while condiition
+3. Do-while condiition
 
-// Qs.
+Qs.
 let j = 1;
 do {
     console.log(j);
