@@ -1,7 +1,7 @@
-// Conditional Statement 
-// 1. If Statement
+Conditional Statement 
+1. If Statement
 
-// Qs.
+Qs.
 let age = 20;
 if (age >= 18) {
     console.log("You Can Vote.");
@@ -11,9 +11,9 @@ if (age >= 18) {
 
 
 
-// 2. If-else Statement
+2. If-else Statement
 
-// Qs.
+Qs.
 let marks = 45;
 if (marks >= 50) {
     console.log("Pass");
@@ -24,9 +24,9 @@ if (marks >= 50) {
 
 
 
-// 3. Else-if Statement
+3. Else-if Statement
 
-// Qs.
+Qs.
 let score = 67;
 if(score >= 90){
     console.log("Grade is: A");
@@ -42,9 +42,9 @@ if(score >= 90){
 
 
 
-// 4. Switch Statement
+4. Switch Statement
 
-// Qs.
+Qs.
 let player = "Dhoni";
 switch(player) {
     case "Sachin":
@@ -64,9 +64,9 @@ switch(player) {
 
 
 
-// 5. Ternary Operator
+5. Ternary Operator
 
-// Qs.
+Qs.
 let isCheck = true;
 let result = isCheck ? "Condition is correct" : "Condition is wrong";
 console.log(result);

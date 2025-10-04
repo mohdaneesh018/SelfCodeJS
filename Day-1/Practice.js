@@ -1,6 +1,6 @@
-// 1. Check if a number is even or odd:-
+1. Check if a number is even or odd:-
 
-// let num = 8;
+let num = 8;
 let num = 15;
 if (num % 2 == 0) {
     console.log("Number is Even");
@@ -13,7 +13,7 @@ if (num % 2 == 0) {
 
 
 
-// 2. Check if a person is eligible for driving (age ≥ 18):-
+2. Check if a person is eligible for driving (age ≥ 18):-
 
 let age = 24;
 if (age >= 18) {
@@ -27,7 +27,7 @@ if (age >= 18) {
 
 
 
-// 3. Find the greatest among three numbers:-
+3. Find the greatest among three numbers:-
 
 let a = 10;
 let b = 25;
@@ -45,7 +45,8 @@ if (a >= b && a >= c) {
 
 
 
-// 4. Check if a number is positive, negative or zero:-
+4. Check if a number is positive, negative or zero:-.
+
 let x = -40;
 if (x > 0) {
     console.log("Number is Positive");
@@ -60,11 +61,11 @@ if (x > 0) {
 
 
 
-// 5. Take a score and print grade
-// 90+ → Grade A
-// 75–89 → Grade B
-// 60–74 → Grade C
-// < 60 → Fail
+5. Take a score and print grade
+90+ → Grade A
+75–89 → Grade B
+60–74 → Grade C
+< 60 → Fail
 
 let marks = 86;
 if (marks >= 90) {
@@ -82,7 +83,8 @@ if (marks >= 90) {
 
 
 
-//Qs. Create a function called `getGrade` that takes a number (0 to 100) {
+Qs. Create a function called `getGrade` that takes a number (0 to 100) 
+
 let mark = 92;
 switch (mark) {
     case mark >= 90:
@@ -103,7 +105,8 @@ switch (mark) {
 
 
 
-// Qs.Write a function `getDayName` that takes a number from 1 to 7 and returns the corresponding day of the week.
+Qs.Write a function `getDayName` that takes a number from 1 to 7 and returns the corresponding day of the week.
+
 function getDayName(day) {
     switch(day) {
         case 1:
