@@ -1,4 +1,5 @@
 Qs.
+
 let arr = [12, 23, 45, 34, 56, 98, 78];
 let matchFlag = false;
 let target = 95;
@@ -20,13 +21,14 @@ if (matchFlag == false) {
 
 
 
-// Reduce Method Syntax
-// array.reduce((accumulator, currentValue) => { ... }, initialValue);
+Reduce Method Syntax
+array.reduce((accumulator, currentValue) => { ... }, initialValue);
 
 Qs.
+
 let num = [10, 20, 30, 40, 50, 60];
 let initialValue = 0;
-let result = num.reduce((acc, curr)  => acc + curr, initialValue);
+let result = num.reduce((acc, curr) => acc + curr, initialValue);
 console.log(result);
 
 
@@ -37,11 +39,12 @@ console.log(result);
 
 
 
-// Every Method Syntax                     // used as same and operator (&&)
-// array.every((element) => condition);
+Every Method Syntax                     // used as same and operator (&&)
+array.every((element) => condition);
 
 
 Qs.
+
 let num = [20, 30, 21, 23, 45];
 let newNum = num.every((n) => n > 10);
 console.log(newNum);
@@ -52,8 +55,8 @@ console.log(newNum);
 
 
 
-// Some Method Syntax                     // used as same or operator (||)
-// array.some((element) => condition);
+Some Method Syntax                     // used as same or operator (||)
+array.some((element) => condition);
 
 
 Qs.
