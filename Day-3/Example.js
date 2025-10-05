@@ -1,15 +1,17 @@
-// Nested-Loop
+Nested-Loop
 
-// let n = 2;
-// for(let i=1; i <= n; i++){
-//     for(let j = 1; j <= 3; j++){
-//         console.log(`i = ${i}, j = ${j}`);
-//     }
-// }
+let n = 2;
+for(let i=1; i <= n; i++){
+    for(let j = 1; j <= 3; j++){
+        console.log(`i = ${i}, j = ${j}`);
+    }
+}
 
 
 
-// Diamond-Pattern
+Diamond-Pattern
+Qs.
+
 let n = 4;
 
 // Upper Part
