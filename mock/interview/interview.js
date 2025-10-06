@@ -61,13 +61,13 @@ console.log(BinarySearch(nums));
 
 
 Qs.
+
 let nums = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
     [9, 10, 11, 12],
 ];
 const result = [];
-
 function twoDimensional(nums) {
     let left = 0;
     let right = nums[0].length - 1;
@@ -76,20 +76,20 @@ function twoDimensional(nums) {
 
     while (left <= right && top <= bottom) {
         // left -> right
-        for (let i = left; i <= right; i++) { 
+        for (let i = left; i <= right; i++) {
             result.push(nums[top][i]);
         }
         top++;
 
         // top -> bottom
-        for (let i = top; i <= bottom; i++) { 
+        for (let i = top; i <= bottom; i++) {
             result.push(nums[i][right]);
         }
         right--;
 
         // right -> left
         if (top <= bottom) {
-            for (let i = right; i >= left; i--) { 
+            for (let i = right; i >= left; i--) {
                 result.push(nums[bottom][i]);
             }
             bottom--;
@@ -97,7 +97,7 @@ function twoDimensional(nums) {
 
         // bottom -> top
         if (left <= right) {
-            for (let i = bottom; i >= top; i--) { 
+            for (let i = bottom; i >= top; i--) {
                 result.push(nums[i][left]);
             }
             left++;
@@ -111,13 +111,13 @@ console.log(twoDimensional(nums));
 
 
 Qs.
+
 let nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
-]; 
+];
 let result = [];
-
 function isNums(nums) {
     for (let i = 0; i <= nums.length - 1; i++) {
         for (let j = 0; j <= nums[i].length - 1; j++) {
@@ -134,13 +134,13 @@ console.log(isNums(nums));
 
 
 Qs.
+
 let nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
-]; 
+];
 let result = [];
-
 function isNums(nums) {
     for (let i = 0; i <= nums.length - 1; i++) {
         for (let j = 0; j <= nums[i].length - 1; j++) {
