@@ -2,7 +2,7 @@
    Write a function that takes an array of numbers and returns how many are even and how many are odd.
     Input 1: [2, 3, 4, 5]
    Output 1: { even: 2, odd: 2 }
-   Input 2: [11, 14, 16, 17, 19]
+    Input 2: [11, 14, 16, 17, 19]
    Output 2: { even: 2, odd: 3 }
 
 // let arr = [2, 3, 4, 5];
@@ -32,11 +32,10 @@ console.log(countEvenOdd(arr));
 
 
 2. Grade Distribution
-   Given an array of marks, return how many students scored in grade ranges: A(90 +), B(80 - 89), C(70 - 79),
-    D(60 - 69), F(< 60).
-        Input 1: [95, 82, 67, 50]
+   Given an array of marks, return how many students scored in grade ranges: A(90 +), B(80 - 89), C(70 - 79), D(60 - 69), F(< 60).
+    Input 1: [95, 82, 67, 50]
    Output 1: { A: 1, B: 1, C: 0, D: 1, F: 1 }
-   Input 2: [91, 59, 76, 88]
+        Input 2: [91, 59, 76, 88]
    Output 2: { A: 1, B: 1, C: 1, D: 0, F: 1 }
 
 // let arr = [95, 82, 67, 50];
@@ -72,7 +71,7 @@ console.log(gradeRange(arr));
     Check if all elements in the array are greater than 0 using`every()`.
         Input 1: [1, 2, 3, 4]
  Output 1: true
- Input 2: [-1, 0, 5]
+    Input 2: [-1, 0, 5]
  Output 2: false
 
 // let arr = [1, 2, 3, 4];
@@ -89,7 +88,7 @@ console.log(newArr);
  Return the first number in the array greater than 50 using find or loop.
     Input 1: [10, 25, 60, 40]
  Output 1: 60
- Input 2: [45, 52, 19]
+    Input 2: [45, 52, 19]
  Output 2: 52
 
 // let arr = [10, 25, 60, 40];
@@ -109,7 +108,7 @@ console.log(newArr);
  Check if a year is a leap year(divisible by 4 but not 100, unless divisible by 400).
     Input 1: 2024
  Output 1: true
- Input 2: 2023
+    Input 2: 2023
  Output 2: false
 
 // let year = 2024;
@@ -130,9 +129,9 @@ console.log(leapChecker(year));
 
 6. Double the Elements
 Using`map()`, return a new array where every number is multiplied by 2.
- Input 1: [1, 2, 3]
+    Input 1: [1, 2, 3]
  Output 1: [2, 4, 6]
- Input 2: [5, 10]
+    Input 2: [5, 10]
  Output 2: [10, 20]
 
 // let arr = [1, 2, 3];
@@ -150,7 +149,7 @@ console.log(newArr);
    Return a new array with only the odd numbers using`filter()`.
     Input 1: [1, 2, 3, 4, 5]
     Output 1: [1, 3, 5]
-    Input 2: [10, 15, 20, 25]
+        Input 2: [10, 15, 20, 25]
     Output 2: [15, 25]
 
 // let arr = [1, 2, 3, 4, 5];
@@ -169,7 +168,7 @@ console.log(newArr);
     Return the total number of characters in an array of strings using`reduce()`.
     Input 1: ['hi', 'world']
     Output 1: 7
-    Input 2: ['a', 'ab', 'abc']
+        Input 2: ['a', 'ab', 'abc']
     Output 2: 6
 
 // let arr = ['hi', 'world'];
@@ -188,7 +187,7 @@ console.log(newArr);
  Return the last 3 items in the array using`slice()`.
     Input 1: [1, 2, 3, 4, 5]
  Output 1: [3, 4, 5]
- Input 2: [10, 20, 30, 40]
+    Input 2: [10, 20, 30, 40]
  Output 2: [20, 30, 40]
 
 // let arr = [1, 2, 3, 4, 5];
@@ -209,9 +208,9 @@ console.log(newArr);
 
 10. Remove Element at Index 2
 Use `splice()` to remove the element at index 2.
- Input 1: [1, 2, 3, 4]
+    Input 1: [1, 2, 3, 4]
  Output 1: [1, 2, 4]
- Input 2: [10, 11, 12, 13]
+    Input 2: [10, 11, 12, 13]
  Output 2: [10, 11, 13]
 
 // let arr = [1, 2, 3, 4];
@@ -235,7 +234,7 @@ console.log(arr);
  Return a new array where each word starts with an uppercase letter.
     Input 1: ['hello', 'world']
  Output 1: ['Hello', 'World']
- Input 2: ['code', 'test']
+    Input 2: ['code', 'test']
  Output 2: ['Code', 'Test']
 
 let arr = ['hello', 'world'];
@@ -250,7 +249,7 @@ function firstLetter(arr) {
 }
 console.log(firstLetter(arr));
 
-OR Second Method
+OR
 
 let arr = ['code', 'test'];
 let newArr = arr.map(word => word[0].toUpperCase() + word.slice(1));
@@ -263,9 +262,9 @@ console.log(newArr);
 
 12. Check Divisibility by 5
 Use `some()` to check if at least one number in the array is divisible by 5.
- Input 1: [3, 6, 10, 14]
+    Input 1: [3, 6, 10, 14]
  Output 1: true
- Input 2: [2, 4, 6]
+    Input 2: [2, 4, 6]
  Output 2: false
 
 // let arr = [3, 6, 10, 14];
@@ -285,7 +284,7 @@ console.log(newArr);
  Return the index of the first negative number, or - 1 if none found.
     Input 1: [1, 2, -3, 4]
  Output 1: 2
- Input 2: [5, 7, 8]
+    Input 2: [5, 7, 8]
  Output 2: -1
 
 // let arr = [1, 2, -3, 4];
@@ -310,7 +309,7 @@ console.log(negativeIndex(arr));
  Return an object where the keys are words and values are how many times each appears.
     Input 1: ['apple', 'banana', 'apple']
  Output 1: { apple: 2, banana: 1 }
- Input 2: ['x', 'x', 'y']
+    Input 2: ['x', 'x', 'y']
  Output 2: { x: 2, y: 1 }
 
 // let str = ['apple', 'banana', 'apple'];
@@ -339,7 +338,7 @@ console.log(countFrequency(str));
  Create an object grouping strings based on their length.
     Input 1: ['hi', 'yes', 'no', 'maybe']
  Output 1: { 2: ['hi', 'no'], 3: ['yes'], 5: ['maybe'] }
- Input 2: ['a', 'ab', 'abc']
+    Input 2: ['a', 'ab', 'abc']
  Output 2: { 1: ['a'], 2: ['ab'], 3: ['abc'] }
 
 // let str = ['hi', 'yes', 'no', 'maybe'];
@@ -369,7 +368,7 @@ console.log(strLength(str));
  Convert an array of objects to a single object where keys are IDs and values are names.
     Input 1: [{ id: 1, name: 'A' }, { id: 2, name: 'B' }]
  Output 1: { 1: 'A', 2: 'B' }
- Input 2: [{ id: 3, name: 'X' }, { id: 4, name: 'Y' }]
+    Input 2: [{ id: 3, name: 'X' }, { id: 4, name: 'Y' }]
  Output 2: { 3: 'X', 4: 'Y' }
 
 // let arr = [{ id: 1, name: 'A' }, { id: 2, name: 'B' }];
@@ -393,7 +392,7 @@ console.log(arraytoObj(arr));
  Return a count of how many times each data type appears in an array.
     Input 1: [1, 'hi', true, {}]
  Output 1: { number: 1, string: 1, boolean: 1, object: 1 }
- Input 2: ['x', 'y', 5]
+    Input 2: ['x', 'y', 5]
  Output 2: { string: 2, number: 1 }
 
 // let arr = [1, 'hi', true, {}];
@@ -421,7 +420,7 @@ console.log(countDataTypes(arr));
  Flatten a single - level nested array(no recursion).
     Input 1: [1, [2, 3], 4]
  Output 1: [1, 2, 3, 4]
- Input 2: ['a', ['b', 'c']]
+    Input 2: ['a', ['b', 'c']]
  Output 2: ['a', 'b', 'c']
 
 // let arr = [1, [2, 3], 4];
@@ -463,7 +462,7 @@ console.log(flatten(arr));
  Return a new array without duplicate numbers.
     Input 1: [1, 2, 2, 3]
  Output 1: [1, 2, 3]
- Input 2: [4, 4, 4, 5]
+    Input 2: [4, 4, 4, 5]
  Output 2: [4, 5]
 
 // let arr = [1, 2, 2, 3]
@@ -486,11 +485,11 @@ console.log(removeDuplicateArr(arr));
 
 
 
-20.  Find Longest Word
+20. Find Longest Word
  Return the longest word from an array of strings.
     Input 1: ['hi', 'hello', 'goodbye']
  Output 1: 'goodbye'
- Input 2: ['short', 'longer', 'lengthiest']
+    Input 2: ['short', 'longer', 'lengthiest']
  Output 2: 'lengthiest'
 
 // let str = ['hi', 'hello', 'goodbye'];
