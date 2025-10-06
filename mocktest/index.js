@@ -2,29 +2,23 @@ Write a function to return all elements of a given 2D matrix in spiral order.
 
 Example:
 Input →
-
 [[1, 2, 3],
- [4, 5, 6],
- [7, 8, 9]]
+[4, 5, 6],
+[7, 8, 9]]
 
-
-Output →
-
-[1, 2, 3, 6, 9, 8, 7, 4, 5]
+Output →[1, 2, 3, 6, 9, 8, 7, 4, 5]
 
 let nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ];
-
 const result = [];
 
 let left = 0;
 let right = nums[0].length - 1;
 let top = 0;
 let bottom = nums.length - 1;
-
 
 function twodArray(nums) {
     while (left <= right && top <= bottom) {
@@ -64,7 +58,7 @@ console.log(twodArray(nums));
 
 
 
-using Binary Search
+Qs.Using Binary Search
 
 let arr = [10, 20, 30, 40, 50, 60, 70];
 let target = 10;
