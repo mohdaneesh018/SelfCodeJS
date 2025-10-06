@@ -1,5 +1,7 @@
 Using this Keyword
+
 Qs.
+
 const data = {
     name: "Aneesh",
     age: 21,
@@ -13,8 +15,11 @@ console.log(data.greeting(), "data.greeting()");
 
 
 
+
 Combination of this keyword + new + constructor function
+
 Qs.
+
 function admission(name, surname, email, number) {
     this.name = name;
     this.surname = surname;
@@ -42,6 +47,9 @@ console.log(user2.number);
 
 
 Using Class
+
+Qs.
+
 class Teacher {
     constructor(name, subject){
         this.name = name;
@@ -69,7 +77,9 @@ console.log("teach", teacher2.teach());
 
 
 try, catch, finally
+
 Qs.
+
 try {
     const num = 10;
     num = 20;              // const is re-assign then error is print
@@ -86,7 +96,9 @@ try {
 
 
 Async Await
+
 Qs.
+
 function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -96,6 +108,7 @@ function fetchData() {
     })
 }
 
+// without async await
 // function data() {
 //     try {
 //         const result = fetchData();
@@ -105,6 +118,8 @@ function fetchData() {
 //     }
 // }
 
+
+// using async await
 async function data() {
     try {
         const result = await fetchData();
