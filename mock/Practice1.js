@@ -753,7 +753,7 @@ Fir ek object banao aur deposit + withdraw test karo. (Hard – real life exampl
 
 
     Qs.Inheritance
-    
+
     class User {
         constructor(name, surname) {
             this.name = name;
