@@ -5,7 +5,7 @@ Output:
        ***
       *****
 
-    let n = 3;
+let n = 3;
 for (let i = 1; i <= n; i++) {
     var res = "";
     for (let space = 1; space <= (n - i); space++) {
@@ -30,7 +30,7 @@ Output:
             *  *
             ****
 
-    let n = 4;
+let n = 4;
 for (let i = 1; i <= n; i++) {
     let res = "";
     for (let j = 1; j <= n; j++) {
@@ -86,10 +86,8 @@ let users = [
     { name: "B", role: "user" },
     { name: "C", role: "admin" },
 ]
-
 function groupByRole(arr) {
     let result = {};
-
     for (let i = 0; i < arr.length; i++) {
         let role = arr[i].role;
         let name = arr[i].name;
@@ -115,7 +113,6 @@ Output: ["101", "000", "111"]
 
 function uniqueBinary(arr) {
     let result = [];
-
     for (let i = 0; i < arr.length; i++) {
         if (!result.includes(arr[i])) {
             result.push(arr[i]);
@@ -133,13 +130,13 @@ console.log(uniqueBinary(["101", "101", "000", "111", "000"]));
 6. Number Pyramid
 Input: 5
 Output:
-        1
-       121
-      12321
-     1234321
-    123454321
+1
+121
+12321
+1234321
+123454321
 
-let n = 5; 
+let n = 5;
 for (let i = 1; i <= n; i++) {
     let res = "";
     for (let spaces = 1; spaces <= (n - i); spaces++) {                // space k liye
