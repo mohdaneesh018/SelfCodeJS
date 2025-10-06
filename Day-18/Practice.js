@@ -1,12 +1,12 @@
-1. Practice Qs. This keyword
+1. Practice Qs.This keyword
 
-Q1. Ek object student banao jisme name aur age ho. Ek method details() likho jo this use karke student ka name aur age print kare.
+Q1.Ek object student banao jisme name aur age ho.Ek method details() likho jo this use karke student ka name aur age print kare.
 (Fir us object ke andar ek nested object bana ke check karo ki this kis context me point karta hai.)
 
 let student = {
     name: "Aneesh",
     age: 21,
-    deatils: function () {
+    details: function () {
         console.log("name", this.name);
         console.log("age", this.age);
 
@@ -28,7 +28,7 @@ student.deatils();
 
 2. Constructor function + new
 
-Q2. Ek constructor function Car(brand, model, price) banao jo car object create kare.
+    Q2.Ek constructor function Car(brand, model, price) banao jo car object create kare.
 Isme ek method add karo getDetails() jo brand aur model return kare.
 Fir do alag cars ke object banao aur unki details print karo.
 
@@ -59,9 +59,9 @@ console.log("price", carObj1.price);
 
 3. Class
 
-Q3. Ek class BankAccount banao jisme properties ho: name, balance.
+Q3.Ek class BankAccount banao jisme properties ho: name, balance.
 Method deposit(amount) jo balance badhaye.
-Method withdraw(amount) jo balance kam kare. Agar balance se zyada withdraw ho to "Insufficient Funds" print ho.
+Method withdraw(amount) jo balance kam kare.Agar balance se zyada withdraw ho to "Insufficient Funds" print ho.
 Fir ek object banao aur deposit + withdraw test karo. (Hard – real life example)
 
 class BankAccount {
@@ -99,7 +99,7 @@ console.log(bankManager.withdraw());
 
 4. try, catch, finally
 
-Q4. Ek function divide(a, b) banao jo do numbers ka division return kare. Agar b = 0 ho to error throw karo aur catch block me "Division by zero not allowed" print ho.
+Q4.Ek function divide(a, b) banao jo do numbers ka division return kare.Agar b = 0 ho to error throw karo aur catch block me "Division by zero not allowed" print ho.
 (Practice error handling ke liye)
 
 function divide(a, b) {
@@ -107,10 +107,9 @@ function divide(a, b) {
         // let calculate = a / b;                      // try ka result chahiyee to ye comment out kro
         // console.log(calculate, "calculate");
 
-        if(b == 0) {                                   // error chahiye to ye example
+        if (b == 0) {                                   // error chahiye to ye example
             throw new Error("Division by zero not allowed");
         }
-
     } catch (error) {
         console.log(error.message);
     } finally {
@@ -125,10 +124,10 @@ divide(10, 0);
 
 
 5. Promise
-Q5. Ek function checkEven(num) banao jo ek promise return kare:
+Q5.Ek function checkEven(num) banao jo ek promise return kare:
 Agar number even ho to resolve kare "Even number"
 Agar odd ho to reject kare "Odd number".
-Fir .then aur .catch use karke test karo. (Easy/Medium)
+    Fir.then aur.catch use karke test karo. (Easy / Medium)
 
 function checkEven(num) {
     return new Promise((resolve, reject) => {
@@ -151,11 +150,11 @@ checkEven(7)
 
 
 
-6. Async/Await
+6. Async / Await
 
-Q6. Ek function fetchUserData() banao jo 3 second ke baad "User Data Loaded" return kare (Promise ke through).
+Q6.Ek function fetchUserData() banao jo 3 second ke baad "User Data Loaded" return kare(Promise ke through).
 Fir ek async function likho jo is data ko await karke print kare.
-(Ye tumhare async/await understanding strong karega). (Medium)
+(Ye tumhare async / await understanding strong karega). (Medium)
 
 function fetchUserData() {
     return new Promise((resolve, reject) => {
@@ -181,7 +180,7 @@ data();
 
 7. Array + OOPs Mix
 
-Q7. Ek class Library banao jisme ek array ho books ka.
+Q7.Ek class Library banao jisme ek array ho books ka.
 Method addBook(bookName) jo book add kare.
 Method getBooks() jo sari books return kare.
 Method findBook(name) jo check kare book available hai ya nahi.
@@ -222,12 +221,12 @@ console.log(libraryMaster.findBook("Game of Thrones"));
 
 
 
-Q8. Ek class Playlist banao jisme ek array ho songs ka.
+Q8.Ek class Playlist banao jisme ek array ho songs ka.
 
 Method addSong(songName) jo song add kare.
 Method getAllSongs() jo saare songs return kare.
 Method findSong(songName) jo check kare song available hai ya nahi.
-Extra: Method removeSong(songName) jo song delete kare agar wo array me present ho.
+    Extra: Method removeSong(songName) jo song delete kare agar wo array me present ho.
 
 class Playlist {
     constructor() {
