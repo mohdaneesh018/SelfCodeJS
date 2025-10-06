@@ -2,13 +2,12 @@
 Reverse the elements of an array manually(without using.reverse()).
     Input 1: [1, 2, 3]
 Output 1: [3, 2, 1]
-Input 2: [10, 20, 30]
+    Input 2: [10, 20, 30]
 Output 2: [30, 20, 10]
 
 // let arr = [1, 2, 3]; 
 let arr = [10, 20, 30];
 let result = [];
-
 function reverseArray(arr) {
     for (let i = arr.length - 1; i >= 0; i--) {
         result.push(arr[i])
@@ -25,14 +24,13 @@ console.log(reverseArray(arr));
 Return the second largest unique number from an array.
     Input 1: [10, 5, 20, 8]
 Output 1: 10
-Input 2: [1, 2, 2, 3]
+    Input 2: [1, 2, 2, 3]
 Output 2: 2
 
 // let arr = [10, 5, 20, 8];
 let arr = [1, 2, 2, 3];
 let max = 0;
 let secMax = 0;
-
 function secondLargest(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
@@ -55,13 +53,12 @@ console.log(secondLargest(arr));
 Return a new array with all duplicates removed(no Set).
     Input 1: [1, 2, 2, 3]
 Output 1: [1, 2, 3]
-Input 2: [5, 5, 5, 1]
+    Input 2: [5, 5, 5, 1]
 Output 2: [5, 1]
 
 // let arr = [1, 2, 2, 3];
 let arr = [5, 5, 5, 1];
 let result = [];
-
 function removeDuplicates(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (!result.includes(arr[i])) {
@@ -80,9 +77,8 @@ console.log(removeDuplicates(arr));
 Compare if two arrays have same elements in same order.
     Input 1: [1, 2, 3], [1, 2, 3]
 Output 1: true
-Input 2: [1, 2], [2, 1]
+    Input 2: [1, 2], [2, 1]
 Output 2: false
-
 
 // let arr1 = [1, 2, 3];
 // let arr2 = [1, 2, 3];
@@ -107,7 +103,7 @@ console.log(arrayAreEqual(arr1, arr2));
 Rotate array elements k times to the right.
     Input 1: [1, 2, 3, 4], k = 2
 Output 1: [3, 4, 1, 2]
-Input 2: [10, 20, 30], k = 1
+    Input 2: [10, 20, 30], k = 1
 Output 2: [30, 10, 20]
 
 // let arr = [1, 2, 3, 4];
@@ -135,7 +131,7 @@ console.log(rotateK(arr));
 Count number of vowels(a, e, i, o, u) in a given string.
     Input 1: "hello"
 Output 1: 2
-Input 2: "JAVASCRIPT"
+    Input 2: "JAVASCRIPT"
 Output 2: 3
 
 // let str = "hello";
@@ -191,7 +187,7 @@ console.log(printPattern(n));
 Calculate factorial of a number using recursion.
     Input 1: 5
 Output 1: 120
-Input 2: 3
+    Input 2: 3
 Output 2: 6
 
 function factorial(n) {
@@ -224,7 +220,7 @@ console.log(factorial(0));
 Return true if number is prime(only divisible by 1 and itself).
     Input 1: 7
 Output 1: true
-Input 2: 9
+    Input 2: 9
 Output 2: false
 
 function numberPrime(n) {
@@ -250,7 +246,7 @@ console.log(numberPrime(9));
 Return the Nth Fibonacci number(0 - indexed).
     Input 1: 5
 Output 1: 5
-Input 2: 6
+    Input 2: 6
 Output 2: 8
 
 function fibonacciNum(n) {
@@ -279,7 +275,7 @@ console.log(fibonacciNum(6));     // 8
 Return an object with count of each element in array.
     Input 1: [1, 2, 2, 3]
 Output 1: { 1: 1, 2: 2, 3: 1 }
-Input 2: [4, 4, 4]
+    Input 2: [4, 4, 4]
 Output 2: { 4: 3 }
 
 // let arr = [1, 2, 2, 3];
@@ -307,7 +303,7 @@ console.log(countFrequency(arr));
 Swap keys and values in an object.
     Input 1: { a: 1, b: 2 }
 Output 1: { 1: 'a', 2: 'b' }
-Input 2: { x: 'y', z: 'w' }
+    Input 2: { x: 'y', z: 'w' }
 Output 2: { 'y': 'x', 'w': 'z' }
 
 // let obj = {a:1, b:2};
@@ -330,12 +326,11 @@ console.log(invertObj(obj));
 Combine two objects into one.
     Input 1: { a: 1 }, { b: 2 }
 Output 1: { a: 1, b: 2 }
-Input 2: { x: 10 }, { x: 20, y: 30 }
+    Input 2: { x: 10 }, { x: 20, y: 30 }
 Output 2: { x: 20, y: 30 }
 
 let obj1 = { a: 1 };
 let obj2 = { b: 2 };
-
 function mergeObject(obj1, obj2) {
     return { ...obj1, ...obj2 };
 }
@@ -346,7 +341,6 @@ OR
 let obj1 = { x: 10 };
 let obj2 = { x: 20, y: 30 };
 let result = {};
-
 function mergeObject(obj1, obj2) {
     for (let key in obj1) {
         result[key] = obj1[key];
@@ -367,7 +361,7 @@ console.log(mergeObject(obj1, obj2));
 Return the key which has the highest numeric value.
     Input 1: { a: 1, b: 5, c: 3 }
 Output 1: "b"
-Input 2: { x: 100, y: 99 }
+    Input 2: { x: 100, y: 99 }
 Output 2: "x"
 
 // let obj = { a: 1, b: 5, c: 3 };
@@ -395,7 +389,7 @@ console.log(highestValue(obj));
 Return true if string reads same forward and backward.
     Input 1: "madam"
 Output 1: true
-Input 2: "hello"
+    Input 2: "hello"
 Output 2: false
 
 let str = "madam"
@@ -409,6 +403,7 @@ function isPalindrome(str) {
 }
 console.log(isPalindrome(str));
 
+Input 2:
 let str = "hello";
 function isPalindrome(str) {
     let i = 0;
@@ -433,7 +428,7 @@ console.log(isPalindrome(str));
 Return the first character that does not repeat.
     Input 1: "aabbcdd"
 Output 1: "c"
-Input 2: "xxyz"
+    Input 2: "xxyz"
 Output 2: "y"
 
 // let str = "aabbcdd";
@@ -464,7 +459,7 @@ console.log(isNonRepeating(str));
 Reverse a string without using.reverse().
     Input 1: "hello"
 Output 1: "olleh"
-Input 2: "JS"
+    Input 2: "JS"
 Output 2: "SJ"
 
 let str = "hello";
@@ -504,7 +499,7 @@ console.log(reverseString(str));
 Convert a nested array into a single flat array.
     Input 1: [1, [2, [3]], 4]
 Output 1: [1, 2, 3, 4]
-Input 2: [[1], [2, 3]]
+    Input 2: [[1], [2, 3]]
 Output 2: [1, 2, 3]
 
 // let arr = [1, [2, [3]], 4];
@@ -523,7 +518,7 @@ console.log(flatten(arr));
 Group objects into an object by their type.
     Input 1: [{ type: 'fruit', name: 'apple' }, { type: 'fruit', name: 'banana' }]
 Output 1: { fruit: ['apple', 'banana'] }
-Input 2: [{ type: 'a', name: 'x' }, { type: 'b', name: 'z' }]
+    Input 2: [{ type: 'a', name: 'x' }, { type: 'b', name: 'z' }]
 Output 2: { a: ['x'], b: ['z'] }
 
 // let arr = [{ type: 'fruit', name: 'apple' }, { type: 'fruit', name: 'banana' }]
