@@ -40,7 +40,7 @@ printstar(n);
 
 
 
-Question 3. Print all numbers from 1 to 50 that are divisible by 5. 
+Question 3. Print all numbers from 1 to 50 that are divisible by 5.
 
 function allNum() {
     for (let i = 1; i <= 50; i++) {
@@ -61,13 +61,13 @@ Question 4. Create a pattern with 4 rows like this:
 * 
 * * 
 * * * 
-* * * * 
+* * * *
 
 let n = 4;
 function printPattern(n) {
-    for(let i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         let res = '';
-        for(let j = 1; j <= i; j++) {
+        for (let j = 1; j <= i; j++) {
             res += "* ";
         }
         console.log(res);
