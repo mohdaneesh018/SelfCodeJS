@@ -1,9 +1,9 @@
-// Closure
-// Inheritance
-// 2D - Array
+Closure
+Inheritance
+2D - Array
 
 
-// 1. Closure
+1. Closure
 
 function outerFunc() {              // isme innerfunction ko outerfunction ke scope ka access hota h jisko lexical environment kahte h  
     let counter = 0;
@@ -21,8 +21,8 @@ count();
 
 
 
-// 2. Inheritance
-// Definition => It allows one class to inherit properties and method from another class
+2. Inheritance
+Definition => It allows one class to inherit properties and method from another class
 
 class User {
     constructor(name, surname) {
@@ -50,39 +50,39 @@ myStudent.greetStudent();
 
 
 
-// 3. 2D - Array
+3. 2D - Array
 
+Qs.print Spiral given 2d - Array
 
-// Qs.print Spiral given 2d - Array
-// Qs. 1
+Qs. 1
 let nums = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
     [9, 10, 11, 12],
 ];
 
-// Qs. 2
-// let nums = [
-//     [1, 2, 3],
-//     [4, 5, 6],
-//     [7, 8, 9],
-// ];
+Qs. 2
+let nums = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+];
 
-// Qs. 3
-// let nums = [
-//     [1, 2, 3, 4],
-//     [5, 6, 7, 8],
-//     [9, 10, 11, 12],
-//     [13, 14, 15, 16],
-// ]
+Qs. 3
+let nums = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16],
+]
 
-// Qs. 4
-// let nums = [
-//     [1, 2, 3],
-//     [4, 5, 6],
-//     [7, 8, 9],
-//     [10, 11, 12],
-// ];
+Qs. 4
+let nums = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [10, 11, 12],
+];
 
 function twoDArray(nums) {
 

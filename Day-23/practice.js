@@ -1,5 +1,6 @@
 Practice Questions
-Concept: Closure me inner function ko outer function ke lexical scope ka access hota hai. 
+
+Concept: Closure me inner function ko outer function ke lexical scope ka access hota hai.
 
 Qs. 1 Ek closure banao jo ek counter banaye aur usme reset functionality bhi ho.
 
@@ -37,7 +38,7 @@ count.increament();
 
 
 
-Qs. 2 Ek closure banao jo user ka naam save kare aur baar-baar call karne pe greeting print kare.
+Qs. 2 Ek closure banao jo user ka naam save kare aur baar - baar call karne pe greeting print kare.
 
 function userName(name) {
     function greeting() {
@@ -52,8 +53,8 @@ output();
 
 
 
-Inheritance Question
-Concept: Child class parent class ke properties/methods inherit karti hai.
+2. Inheritance Question
+Concept: Child class parent class ke properties / methods inherit karti hai.
 
 Qs. 1 Ek Person class banao jisme name ho aur ek Employee class jo Person ko extend kare aur salary print kare.
 
@@ -88,7 +89,8 @@ myEmployee.greetEmployee();
 
 
 Qs. 2
-Ek Shape class banao jisme getArea() method ho. Fir Rectangle aur Circle class banakar unme apna-apna area calculate karna ho.
+
+Ek Shape class banao jisme getArea() method ho.Fir Rectangle aur Circle class banakar unme apna - apna area calculate karna ho.
 
 class Shape {
     getArea() {
@@ -135,15 +137,14 @@ console.log(`Area f Circle`, cir.getArea());
 2D Array Questions
 Concept: 2D array traversal, spiral, diagonal, transpose etc.
 
+Qs.1 2D - array ke sabhi elements row wise print karo.    [output => 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-Qs.1 2D-array ke sabhi elements row wise print karo.    [output => 1, 2, 3, 4, 5, 6, 7, 8, 9]
 let nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
 ];
 let result = [];
-
 function singleRows(nums) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = 0; j < nums[i].length; j++) {
@@ -157,14 +158,14 @@ console.log(singleRows(nums));
 
 
 
-Qs. 2 2D-Array ka Transpose nikalo               [output => 1, 4, 7, 2, 5, 8, 3, 6, 9]
+Qs. 2 2D - Array ka Transpose nikalo[output => 1, 4, 7, 2, 5, 8, 3, 6, 9]
+
 let nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
 ]
 let result = [];
-
 function transposeArr(nums) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = 0; j < nums[i].length; j++) {
@@ -173,7 +174,7 @@ function transposeArr(nums) {
     }
     return result;
 }
-console.log( transposeArr(nums));
+console.log(transposeArr(nums));
 
 
 
@@ -181,21 +182,21 @@ console.log( transposeArr(nums));
 
 
 
-Qs. 3 Diagonal Sum nikalo (primary + secondary diagonal)  [output => 1 + 5 + 9   3 + 5 + 7 = 30]
+Qs. 3 Diagonal Sum nikalo(primary + secondary diagonal)[output => 1 + 5 + 9   3 + 5 + 7 = 30]
+
 let nums = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
 ];
-
 function diagonalSum(matrix) {
     let n = matrix.length;
     let sum = 0;
 
-    for (let i = 0; i < n; i++) { 
+    for (let i = 0; i < n; i++) {
         sum += matrix[i][i];
- 
-        if (i !== n + i - 1) {   
+
+        if (i !== n + i - 1) {
             sum += matrix[i][n - i - 1];
         }
     }
