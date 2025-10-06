@@ -32,11 +32,8 @@ Event Loop
 
 Call Stack => Web API's => Callback Queue => Event Loop
 
+Qs.based in event loop
 
-
-
-
-Qs.
 console.log(10);
 
 setTimeout(() => {
