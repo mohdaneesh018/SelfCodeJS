@@ -99,8 +99,27 @@
 // 2. Inheritance
 // Definition => It allows one class to inherit properties and method from another class
 
+// class User {
+//     constructor(name, surname) {
+//         this.name = name;
+//         this.surname = surname;
+//     }
+//     greetUser() {
+//         console.log(`Hello ${this.name} ${this.surname}`);
+//     }
+// }
 
+// class Student extends User {
+//     greetStudent() {
+//         console.log(`Good morning! ${this.name} ${this.surname} from extends USer`);
+//     }
+// }
 
+// const myUser = new User("Rohit", "Sharma");
+// myUser.greetUser();
+
+// const myStudent = new Student("Virat", "Kohli");
+// myStudent.greetStudent();
 
 
 // 2D Array
@@ -314,27 +333,27 @@
 
 
 // 
-let nums = [100, 2, 3, 2, 4, 5, 100, 3, 4, 6, 100, 2, 100];
+// let nums = [100, 2, 3, 2, 4, 5, 100, 3, 4, 6, 100, 2, 100];
 
-function numCount(nums) {
-    var pairs = {}
-    for(let i = 0; i < nums.length; i++) {
-        if(pairs[nums[i]]) {
-            pairs[nums[i]]++;
-        } else {
-            pairs[nums[i]] = 1;
-        }
-    }
+// function numCount(nums) {
+//     var pairs = {}
+//     for(let i = 0; i < nums.length; i++) {
+//         if(pairs[nums[i]]) {
+//             pairs[nums[i]]++;
+//         } else {
+//             pairs[nums[i]] = 1;
+//         }
+//     }
 
-    let max = 0;
-    let value = null;
-    for(let key in pairs) {
-        if(pairs[key] > max) {
-            max = pairs[key];
-            value = key;
-            console.log(max, "max", value, "value");
-        }
-    }
-    return value;
-}
-console.log(numCount(nums));
+//     let max = 0;
+//     let value = null;
+//     for(let key in pairs) {
+//         if(pairs[key] > max) {
+//             max = pairs[key];
+//             value = key;
+//             console.log(max, "max", value, "value");
+//         }
+//     }
+//     return value;
+// }
+// console.log(numCount(nums));
