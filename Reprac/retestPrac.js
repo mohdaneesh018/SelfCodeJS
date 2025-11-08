@@ -178,6 +178,71 @@
 
 
 
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+
+// let n = matrix.length;
+// let result = [];
+
+// // Step 1: First row
+// for (let i = 0; i < n; i++) {
+//   result.push(matrix[0][i]);
+// }
+
+// // Step 2: Diagonal (exclude first & last element)
+// for (let i = 1; i < n - 1; i++) {
+//   result.push(matrix[i][n - 1 - i]);
+// }
+
+// // Step 3: Last row
+// for (let i = 0; i < n; i++) {
+//   result.push(matrix[n - 1][i]);
+// }
+
+// console.log("Z-Type Traversal:", result.join(" "));               //Z-Type Traversal: 1 2 3 5 7 8 9
+
+
+
+
+
+
+
+
+
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+
+// let n = matrix.length;
+// let result = [];
+
+// // Step 1: First column
+// for (let i = 0; i < n; i++) {
+//   result.push(matrix[i][0]);
+// }
+
+// // Step 2: Diagonal (exclude first & last element)
+// for (let i = n - 2; i > 0; i--) {
+//   result.push(matrix[i][n - 1 - i]);
+// }
+
+// // Step 3: Last column
+// for (let i = 0; i < n; i++) {
+//   result.push(matrix[i][n - 1]);
+// }
+
+// console.log("N-Type Traversal:", result.join(" "));           //N-Type Traversal: 1 4 7 5 3 6 9
+
+
+
+
+
+
 // let nums = [
 //     [1, 2, 3],
 //     [4, 5, 6],
